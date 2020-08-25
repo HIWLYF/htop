@@ -22,6 +22,7 @@ in the source distribution for its full text.
 #include "ClockMeter.h"
 #include "HostnameMeter.h"
 #include "LinuxProcess.h"
+#include "TemperatureMeter.h"
 
 #include <math.h>
 #include <assert.h>
@@ -126,6 +127,7 @@ MeterClass* Platform_meterTypes[] = {
    &LeftCPUs2Meter_class,
    &RightCPUs2Meter_class,
    &BlankMeter_class,
+   &TemperatureMeter_class,
    NULL
 };
 
