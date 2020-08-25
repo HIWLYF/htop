@@ -26,7 +26,7 @@ static void Temperature_updateValues(Meter * this, char *buffer, int len) {
 
    Temperature_getData(&temperature);
 
-   if (temperature == -1) {
+   if (temperature < 0) {
       this->values[0] = 0;
       xSnprintf(buffer, len, "n/a");
       return;
